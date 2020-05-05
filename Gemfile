@@ -23,9 +23,9 @@ gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 # Carrierwave for Image uploads
-# gem 'carrierwave', '2.1.0'
+# gem 'carrierwave'
 # Use Mini Magick for Image resizing
-# gem 'mini_magick', '~> 4.9'
+# gem 'mini_magick'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
