@@ -75,25 +75,25 @@ GEM
     erubis (2.7.0)
     excon (0.73.0)
     execjs (2.7.0)
-    faraday (0.17.3)
+    faraday (1.0.1)
       multipart-post (>= 1.2, < 3)
     ffi (1.12.2)
     fission (0.5.0)
       CFPropertyList (~> 2.2)
-    fog (2.2.0)
+    fog (2.1.0)
       fog-aliyun (>= 0.1.0)
       fog-atmos
       fog-aws (>= 0.6.0)
       fog-brightbox (~> 0.4)
-      fog-cloudatcost (~> 0.4)
-      fog-cloudstack (~> 0.1.0)
-      fog-core (~> 2.1)
+      fog-cloudatcost (~> 0.1.0)
+      fog-core (~> 1.45)
       fog-digitalocean (>= 0.3.0)
-      fog-dnsimple (~> 2.1)
+      fog-dnsimple (~> 1.0)
       fog-dynect (~> 0.0.2)
       fog-ecloud (~> 0.1)
       fog-google (~> 1.0)
       fog-internet-archive
+      fog-joyent
       fog-json
       fog-local
       fog-openstack
@@ -123,9 +123,9 @@ GEM
     fog-atmos (0.1.0)
       fog-core
       fog-xml
-    fog-aws (3.6.3)
-      fog-core (~> 2.1)
-      fog-json (~> 1.1)
+    fog-aws (2.0.1)
+      fog-core (~> 1.38)
+      fog-json (~> 1.0)
       fog-xml (~> 0.1)
       ipaddress (~> 0.8)
     fog-brightbox (0.16.1)
@@ -133,27 +133,23 @@ GEM
       fog-core
       fog-json
       mime-types
-    fog-cloudatcost (0.4.0)
-      fog-core
-      fog-json
-      ipaddress
-    fog-cloudstack (0.1.0)
-      fog-core (~> 2.1)
-      fog-json (~> 1.1)
+    fog-cloudatcost (0.1.2)
+      fog-core (~> 1.36)
+      fog-json (~> 1.0)
       fog-xml (~> 0.1)
-    fog-core (2.2.0)
+      ipaddress (~> 0.8)
+    fog-core (1.45.0)
       builder
-      excon (~> 0.71)
+      excon (~> 0.58)
       formatador (~> 0.2)
-      mime-types
     fog-digitalocean (0.4.0)
       fog-core
       fog-json
       fog-xml
       ipaddress (>= 0.5)
-    fog-dnsimple (2.1.0)
-      fog-core (>= 1.38, < 3)
-      fog-json
+    fog-dnsimple (1.0.0)
+      fog-core (~> 1.38)
+      fog-json (~> 1.0)
     fog-dynect (0.0.3)
       fog-core
       fog-json
@@ -161,22 +157,25 @@ GEM
     fog-ecloud (0.3.0)
       fog-core
       fog-xml
-    fog-google (1.7.1)
-      fog-core
-      fog-json
-      fog-xml
-      google-api-client (~> 0.23.0)
+    fog-google (1.10.0)
+      fog-core (<= 2.1.0)
+      fog-json (~> 1.2)
+      fog-xml (~> 0.1.0)
+      google-api-client (>= 0.32, < 0.34)
     fog-internet-archive (0.0.1)
       fog-core
       fog-json
       fog-xml
+    fog-joyent (0.0.1)
+      fog-core (~> 1.42)
+      fog-json (>= 1.0)
     fog-json (1.2.0)
       fog-core
       multi_json (~> 1.10)
     fog-local (0.6.0)
       fog-core (>= 1.27, < 3.0)
-    fog-openstack (1.0.10)
-      fog-core (~> 2.1)
+    fog-openstack (0.3.10)
+      fog-core (>= 1.45, <= 2.1.0)
       fog-json (>= 1.0)
       ipaddress (>= 0.8)
     fog-ovirt (1.2.4)
@@ -189,10 +188,9 @@ GEM
       fog-core
       fog-json
       fog-xml
-    fog-profitbricks (0.0.5)
-      fog-core
-      fog-xml
-      nokogiri
+    fog-profitbricks (4.1.1)
+      fog-core (~> 1.42)
+      fog-json (~> 1.0)
     fog-rackspace (0.1.6)
       fog-core (>= 1.35)
       fog-json (>= 1.0)
@@ -240,21 +238,21 @@ GEM
     formatador (0.2.5)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
-    google-api-client (0.23.9)
+    google-api-client (0.33.2)
       addressable (~> 2.5, >= 2.5.1)
-      googleauth (>= 0.5, < 0.7.0)
+      googleauth (~> 0.9)
       httpclient (>= 2.8.1, < 3.0)
-      mime-types (~> 3.0)
+      mini_mime (~> 1.0)
       representable (~> 3.0)
       retriable (>= 2.0, < 4.0)
-      signet (~> 0.9)
-    googleauth (0.6.7)
-      faraday (~> 0.12)
+      signet (~> 0.12)
+    googleauth (0.12.0)
+      faraday (>= 0.17.3, < 2.0)
       jwt (>= 1.4, < 3.0)
       memoist (~> 0.16)
       multi_json (~> 1.11)
       os (>= 0.9, < 2.0)
-      signet (~> 0.7)
+      signet (~> 0.14)
     http-accept (1.7.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
@@ -418,7 +416,7 @@ DEPENDENCIES
   byebug
   carrierwave (= 2.1.0)
   coffee-rails (~> 4.2)
-  fog (= 2.2.0)
+  fog (= 2.1.0)
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
