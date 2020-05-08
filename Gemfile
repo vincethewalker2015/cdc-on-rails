@@ -59,7 +59,7 @@ end
 
 group :production do
   gem 'pg'
-  gem 'fog-aws'
+  gem 'fog-aws', group: :production
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
