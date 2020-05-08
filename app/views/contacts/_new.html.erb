@@ -1,0 +1,26 @@
+<%= form_for(@contact) do |f| %>
+  <div class=col-md-6>
+    <div class="form-group">
+      <%= f.label :name , class: "white "%><br />
+      <%= f.text_field :name, class: "form-control", placeholder: "Name" %>
+      <p class="help-block text-danger"></p>
+    </div>
+  </div>
+  
+  <div class="col-md-6">
+    <div class="form-group">
+      <%= f.label :email, class: "white" %><br />
+      <%= f.text_field :email, class: "form-control", placeholder: "email" %>
+      <p class="help-block text-danger"></p>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :message, class: "white" %><br />
+    <%= f.text_area :message, class: "form-control", rows: "4", placeholder: "Write your message here" %>
+    <p class="help-block text-danger"></p>
+  </div>
+  <div class="actions">
+    <%= f.submit "Send message", class: "btn btn-default"%>
+  </div>
+<% end %>
