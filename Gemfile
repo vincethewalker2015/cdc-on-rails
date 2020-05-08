@@ -23,7 +23,7 @@ gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 # Carrierwave for Image uploads
-gem 'carrierwave'
+gem 'carrierwave', '2.1.0'
 # Use Mini Magick for Image resizing
 gem 'mini_magick'
 
@@ -59,7 +59,7 @@ end
 
 group :production do
   gem 'pg'
-  gem 'fog', '1.42.1'
+  gem 'fog-aws'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
