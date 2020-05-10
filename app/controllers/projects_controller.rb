@@ -38,6 +38,13 @@ class ProjectsController < ApplicationController
          render 'edit'
       end
    end
+
+   def destroy
+      @project = Project.find(params[:id])
+      @project.destroy
+      flash[:success] = "Project has been Deleted"
+      redirect_to projectss_path
+    end
    
    private
    

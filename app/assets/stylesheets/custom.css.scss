@@ -2,8 +2,14 @@
 @import "bootstrap";
 
 
+body {
+    border-top: 70px;
+}
 
-
+.center {
+    text-align: center;
+    margin: auto;
+}
 
 /* GENERAL BACKGROUND COLOURS */
  #nav, #header, #skills, .blue, #contact, #New {

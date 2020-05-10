@@ -36,9 +36,9 @@
           	<% @details.each do |detail| %>
                <div class="col-md-12 text-center">
                    <h2><%= detail.name %></h2>
-                   <h4>We Specialise in Microsoft Cloud Architecture</h4> <br />
+                   <h3><%= detail.employee_name%></h3>
+                   <h4><%= detail.title %></h4>
                    <p class="detail-pic"><%= image_tag detail.picture.url if detail.picture?  %></p>
-                   <h5><%= detail.employee_name%> - <%= detail.title %> </h5>
                    <p><%= simple_format detail.description %></p><br />
                   <br />
                  </div>

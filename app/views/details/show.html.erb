@@ -2,31 +2,27 @@
     <div class="row">
       <%= render 'layouts/flash' %>
       <div class="title-header">
-      <h2 align="center"><%= @detail.name %></h2>
+        <h2 class="center"><%= @detail.name %></h2>
+      </div>
 
-
-      <div class="col-md-10 col-md-offset-1">
-
-
-          <p align="center">
+      <div class="center">
+          <p class="">
+          <h3 class=""><%= @detail.employee_name%> - <%= @detail.title %> </h3>
             <%= image_tag @detail.picture.url, class: "detail-pic" if @detail.picture? %>
           </p>
-          <h5 align="center"><%= @detail.employee_name%> - <%= @detail.title %> </h5>
           <br />
-
           <p>
             <%= simple_format @detail.description %>
           </p>
           <br />
-          <p align="center">
+          <p class="">
             <%= link_to "What the World can see", root_path, class: "btn btn-success" %>
             <%= link_to "Company Projects", projects_path, class: "btn btn-primary" %>
-            <%= link_to "Edit your Details", edit_detail_path(@detail), class: "btn btn-warning" %>
-            <%= link_to "Delete Your Details", detail_path(@detail), method: :delete, data: {confirm: "Are you sure?" }, class: "btn btn-danger" %>
+            <%= link_to "All Company Details", details_path, class: "btn btn-primary" %>
+            <%= link_to "Edit Company Details", edit_detail_path(@detail), class: "btn btn-warning" %>
+            <%= link_to "Delete Details", detail_path(@detail), method: :delete, data: {confirm: "Are you sure?" }, class: "btn btn-danger" %>
           </p>
-
       </div>
-
-    </div>
+    
     </div>
 </div>

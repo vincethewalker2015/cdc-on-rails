@@ -1,13 +1,13 @@
 <div class="container">
      <div class="row">
     <%= render 'layouts/flash' %>
-    <h2 align="center" class="">Edit Company Details</h2>
+    <h2 class="center" class="">Edit Company Details</h2>
     <div class="pages">
-        <div align="center">
+        <div class="center">
             <p><%= link_to "Create New Profile", new_detail_path, class: "btn btn-primary" %></p>
            <% @details.each do |detail| %>
-               <div class="">
-                   <h3><%= detail.name %></h3>
+               <div class="center">
+                   <h3><%= detail.employee_name %></h3>
                    <p><%= image_tag detail.picture.url if detail.picture?  %></p>
                    <p><%= detail.description %></p><br />
                    <p><%= link_to "What the world sees", root_path, class: "btn btn-success" %>
