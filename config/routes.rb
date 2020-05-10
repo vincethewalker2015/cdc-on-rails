@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     resources :projects
     resources :details
     resources :users
+    resources :contacts, only: [:new, :create]
     
     get '/login', to: 'sessions#new'
     post '/login', to: 'sessions#create'

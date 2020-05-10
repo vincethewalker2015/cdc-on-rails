@@ -12,7 +12,7 @@
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-left">
             <li><%= link_to "CDC", root_path, class: "navbar-brand page-scroll white" %></li>
-            <li><%= link_to current_user.name if logged_in? %></li>
+            <li><%= link_to (current_user.name), user_path(current_user) if logged_in? %></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <!-- Hidden li included to remove active class from about link when scrolled up past about section -->

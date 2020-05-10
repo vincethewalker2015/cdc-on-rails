@@ -1,16 +1,16 @@
 <div class="container">
    <div class="row">
   
-      <h2 align="center" class="title-header"><%= @user.name %></h2>
+      <h2 class="center" class="title-header"><%= @user.name %></h2>
 
    
       <div class="col-md-10 col-md-offset-1">
           
           <p>
-            <h3 align="center"><%= @user.email %></h3>
+            <h3 class="center"><%= @user.email %></h3>
           </p>
           <br />
-          <p align="center">
+          <p class="center">
             <%= link_to "Back To Home Page", root_path, class: "btn btn-primary" %>
             <%= link_to "Edit your Details", edit_user_path(@user), class: "btn btn-warning" %>
           </p>

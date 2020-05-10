@@ -2,6 +2,7 @@
     <div class="row">
       <%= render 'layouts/flash' %>
       <div class="title-header">
+<<<<<<< HEAD
         <h2 class="center"><%= @detail.name %></h2>
       </div>
 
@@ -10,12 +11,28 @@
           <h3 class=""><%= @detail.employee_name%> - <%= @detail.title %> </h3>
             <%= image_tag @detail.picture.url, class: "detail-pic" if @detail.picture? %>
           </p>
+=======
+      <h2 class="center"><%= @detail.name %></h2>
+
+
+      <div class="col-md-10 col-md-offset-1">
+
+
+          <p class="center">
+            <%= image_tag @detail.picture.url, class: "detail-pic" if @detail.picture? %>
+          </p>
+          <h5 class="center"><%= @detail.employee_name%> - <%= @detail.title %> </h5>
+>>>>>>> 6b5fc36cdb6db5d545e4a4d911f5c0d46d6d49f5
           <br />
           <p>
             <%= simple_format @detail.description %>
           </p>
           <br />
+<<<<<<< HEAD
           <p class="">
+=======
+          <p class="center">
+>>>>>>> 6b5fc36cdb6db5d545e4a4d911f5c0d46d6d49f5
             <%= link_to "What the World can see", root_path, class: "btn btn-success" %>
             <%= link_to "Company Projects", projects_path, class: "btn btn-primary" %>
             <%= link_to "All Company Details", details_path, class: "btn btn-primary" %>

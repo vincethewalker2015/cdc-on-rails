@@ -1,14 +1,14 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
 body {
-    border-top: 70px;
+    margin-top: 70px;
 }
+
+/* ALL */
 
 .center {
     text-align: center;
-    margin: auto;
 }
 
 /* GENERAL BACKGROUND COLOURS */
@@ -160,7 +160,11 @@ color: #fff;
      margin-top: 140px;
  }
 
+/*-------------------------CONTACT SECTION-------------------------------*/
 
+ .actions {
+     margin: 15px;
+ }
 
  /*------------------------Footer Section ------------------------------*/
 
