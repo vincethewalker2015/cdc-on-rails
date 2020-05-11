@@ -1,8 +1,9 @@
 <div class="container">
-    <div class="row">
-    <h2 align="center" class="title-header">Log in</h2>
+    <div class="row neat-page">
+    <h2 class="center" class="title-header">Log in</h2>
     <div>
-         <%= form_for(:session, :html => {class: "form-horizontal", role: "form"}, url: login_path) do |f| %>
+      <div class="col-md-8 col-md-offset-2">
+        <%= form_for(:session, :html => {class: "form-horizontal", role: "form"}, url: login_path) do |f| %>
     
                <div class="row">
                    <div class="form-group">
@@ -33,6 +34,7 @@
                </div>
             
             <% end %>
+      </div>
     </div>
     
 </div>
