@@ -33,11 +33,20 @@
       <div class=""></div>
       <div class="col-md-8 col-md-offset-2 text-center"><p></p>
         <div class="about-text">
+        <h1>About CDC</h1>
+        <p class="text-left">We are a Solutions Architect company and work with all levels of the business & stakeholders. 
+            With 18 years’ experience working within IT (BAU, Design, Architecture, Implementation and Migrations) 
+            as a service provider and as a client, having been responsible for overseeing and implementing the change 
+            management process across small and large operations and projects..</p> <br />
+
+        <p class="text-left">
+          With extensive experience working on projects with up to 50,000 users within Financial, Insurance, 
+          Public Sector, Oil, Gas and Manufacturing industries and I am ITIL certified.
+        </p><br />
           	<% @details.each do |detail| %>
                <div class="col-md-12 text-center">
-                   <h2><%= detail.name %></h2>
-                   <h4>We Specialise in Microsoft Cloud and O365 Architecture</h4> <br />
                    <p class="detail-pic"><%= image_tag detail.picture.url if detail.picture?  %></p>
+                   <h4><%= detail.employee_name %></h4>
                    <p><%= simple_format detail.description %></p><br />
                   <br />
                  </div>

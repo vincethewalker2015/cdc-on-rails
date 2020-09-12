@@ -59,6 +59,13 @@ color: #fff;
 
 }
 
+//Allows spaces between edit labels in the navbar
+h4, .space {
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+
 
 // Main Page set up
     #about {
@@ -160,6 +167,11 @@ color: #fff;
 
  .newFormTitle {
      margin-top: 140px;
+ }
+
+ //User Show Page
+ .user-page {
+     margin-top: 40px;
  }
 
 /*-------------------------CONTACT SECTION-------------------------------*/
