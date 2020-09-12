@@ -20,8 +20,8 @@
             <li><%= link_to "About CDC", root_path(anchor: '#about') %></li>
             <% if logged_in? %>
               <li><%= link_to "Add User", new_user_path %></li>
-              <li><%= link_to "Edit CDC Info", details_path %></li>
-              <li><%= link_to "Edit Portfolio", projects_path %></li>
+              <li><h4><%= link_to "Edit CDC Company Info", details_path, class: "label label-warning space" %></h4></li>
+              <li><h4><%= link_to "Edit Portfolio", projects_path, class: "label label-warning space" %></h4></li>
             <% end %>
             <li><%= link_to "Portfolio", root_path(anchor: 'portfolio') %></li>
             <li><%= link_to "Contact", root_path(anchor: 'contact') %></li>
