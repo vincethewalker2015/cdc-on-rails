@@ -11,7 +11,7 @@ end
 gem 'rails', '~> 5.2'
 
 # Use Puma as the app server
-gem 'puma', '~> 3.12'
+gem 'puma', '~> 4.3'
 # Add Bootstrap for CSS Styling
 gem 'bootstrap-sass', '3.4.1'
 # Use SCSS for stylesheets
